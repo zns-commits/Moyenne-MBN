@@ -1,4 +1,4 @@
-This repo is a Firefox plugin for calculating Mon Bureau Numérique's general average
+Cette extension ajoute la moyenne à l'ENT MBN (Mon bureau numérique)
 
 If you will add it to firefox, you must each time you launch firefox 
 
@@ -8,7 +8,7 @@ If you will add it to firefox, you must each time you launch firefox
  
  * Click on **Charger un module temporaire**
  
- * Go to your folder and select **manifest.json**
+ * Go to your folder and select **content.js**
  
  * And it's ready
  
