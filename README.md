@@ -7,6 +7,6 @@
     
 - Cliquez sur **Charger un module temporaire**
     
-- Allez dans votre dossier et sélectionnez **content.js**
+- Allez dans votre dossier et sélectionnez **manifest.json**
    
 - Et c'est prêt
