@@ -1,18 +1,27 @@
 {
     "manifest_version": 2,
-    "name": "Ma Moyenne MBN",
-    "version": "1.4",
-
-    "description": "Show MBN's note general average",
-    "homepage_url": "https://github.com/CofeDrink68/MBN-Ma-Moyenne",
-    "icons": {
-      "48": "icons/48.png"
+    "name": "Moyenne MBN",
+    "author": "moyenne.tk",
+    "description": "Cette extension ajoute la moyenne à l'ENT MBN (Mon bureau numérique)",
+    "version": "1.5",
+    "permissions": ["storage", "declarativeContent", "<all_urls>", "webRequest", "webRequestBlocking"],
+    "content_scripts": [{"js": ["content.js"],
+    "matches": ["https://*.monbureaunumerique.fr/sg.do?PROC=CONSULTER_RELEVE&ACTION=AFFICHER_RELEVE_NOTES_ELEVE*"]}],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "images/icon16.png",
+          "24": "images/icon24.png",
+          "128": "images/icon128.png"
+        }
     },
-
-    "content_scripts": [
-      {
-        "matches": ["https://*.monbureaunumerique.fr/sg.do?PROC=CONSULTER_RELEVE&ACTION=AFFICHER_RELEVE_NOTES_ELEVE*"],
-        "js": ["dataV3.js"]
+    "background": {
+        "scripts": ["background.js"],
+        "persistent":true
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "24": "images/icon24.png",
+        "128": "images/icon128.png"
       }
-    ]
 }
